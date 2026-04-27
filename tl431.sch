@@ -1,0 +1,1 @@
+/home/tp/fossil/LMV431BIM3/qucs-s/tl431.sch
