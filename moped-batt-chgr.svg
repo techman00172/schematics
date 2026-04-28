@@ -570,33 +570,6 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
-font-family="Sans Serif" font-size="16" font-weight="600" font-style="normal" 
->
-<text fill="#000080" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="17.0938" font-family="Sans Serif" font-size="16" font-weight="600" font-style="normal" 
- >dc simulation</text>
-<rect x="-5" y="-5" width="116" height="32"/>
-<polyline fill="none" vector-effect="none" points="110,-5 115,0 115,31 0,31 -5,26 " />
-<polyline fill="none" vector-effect="none" points="110,26 115,31 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="51.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
- >DC1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1322,779)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
@@ -884,166 +857,6 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1212,1069)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="-9,18 -9,-18 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="-9,-18 9,-18 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="9,-18 9,18 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="9,18 -9,18 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="0,30 0,18 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="0,-18 0,-30 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="15" y="-8.90625" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
- >R7</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="15" y="12.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
- >R=1 kOhm</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="-18,-9 18,-9 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="18,-9 18,9 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="18,9 -18,9 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="-18,9 -18,-9 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="-30,0 -18,0 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="18,0 30,0 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="32.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
- >R6</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="53.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
- >R=4.7 kOhm</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -1543,6 +1356,259 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="0,30 0,18 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="0,18 -7,15 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-7,15 7,9 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="7,9 -7,3 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-7,3 7,-3 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="7,-3 -7,-9 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-7,-9 7,-15 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="7,-15 0,-18 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="0,-18 0,-30 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,1019)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="15" y="-8.90625" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+ >R9</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="15" y="12.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+ >R=1k Ohm</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-30,0 -18,0 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-18,0 -15,-7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-15,-7 -9,7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-9,7 -3,-7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="-3,-7 3,7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="3,7 9,-7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="9,-7 15,7 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="15,7 18,0 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<polyline fill="none" vector-effect="none" points="18,0 30,0 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,1102,789)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="32.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+ >R10</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-26" y="53.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+ >R=4.7 kOhm</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
+font-family="Sans Serif" font-size="16" font-weight="600" font-style="normal" 
+>
+<text fill="#000080" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="17.0938" font-family="Sans Serif" font-size="16" font-weight="600" font-style="normal" 
+ >dc simulation</text>
+<rect x="-5" y="-5" width="116" height="32"/>
+<polyline fill="none" vector-effect="none" points="110,-5 115,0 115,31 0,31 -5,26 " />
+<polyline fill="none" vector-effect="none" points="110,26 115,31 " />
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,142,469)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0" y="51.0938" font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+ >DC1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
 <g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
@@ -1864,7 +1930,7 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<polyline fill="none" vector-effect="none" points="500,270 500,240 " />
+<polyline fill="none" vector-effect="none" points="500,240 500,270 " />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -1875,7 +1941,7 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<polyline fill="none" vector-effect="none" points="400,670 400,550 " />
+<polyline fill="none" vector-effect="none" points="400,550 400,670 " />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -1951,7 +2017,7 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000080" stroke-opacity="1" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<polyline fill="none" vector-effect="none" points="640,270 610,270 " />
+<polyline fill="none" vector-effect="none" points="610,270 640,270 " />
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -1963,6 +2029,28 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
 <rect x="398" y="688" width="4" height="4"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="398" y="458" width="4" height="4"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="398" y="548" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2091,32 +2179,43 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="468" y="208" width="4" height="4"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="498" y="238" width="4" height="4"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="498" y="178" width="4" height="4"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
 <g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
 <circle cx="690" cy="550" r="3"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<rect x="578" y="528" width="4" height="4"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<rect x="578" y="468" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2160,28 +2259,6 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="-212" y="98" width="4" height="4"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<rect x="-152" y="98" width="4" height="4"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
 <rect x="-452" y="98" width="4" height="4"/>
 </g>
 
@@ -2212,20 +2289,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<circle cx="690" cy="100" r="3"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
+<rect x="768" y="98" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2236,7 +2303,7 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="468" y="208" width="4" height="4"/>
+<rect x="708" y="98" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2247,7 +2314,7 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="498" y="178" width="4" height="4"/>
+<rect x="-212" y="98" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2255,10 +2322,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<circle cx="500" cy="100" r="3"/>
+<rect x="-152" y="98" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2266,15 +2333,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<circle cx="400" cy="210" r="3"/>
+<rect x="578" y="528" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2282,10 +2344,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<circle cx="400" cy="100" r="3"/>
+<rect x="578" y="468" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2304,15 +2366,21 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
+<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+<rect x="608" y="268" width="4" height="4"/>
+</g>
+
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="498" y="238" width="4" height="4"/>
+<circle cx="260" cy="100" r="3"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2334,23 +2402,27 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 <g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<circle cx="260" cy="100" r="3"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
 <circle cx="260" cy="510" r="3"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
+font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
+>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2374,10 +2446,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="608" y="268" width="4" height="4"/>
+<circle cx="690" cy="100" r="3"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2385,10 +2457,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="708" y="98" width="4" height="4"/>
+<circle cx="400" cy="210" r="3"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2396,10 +2468,10 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="768" y="98" width="4" height="4"/>
+<circle cx="500" cy="100" r="3"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
@@ -2407,21 +2479,15 @@ font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal"
 >
 </g>
 
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
+<g fill="#000080" fill-opacity="1" stroke="#000080" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-<rect x="398" y="458" width="4" height="4"/>
+<circle cx="400" cy="100" r="3"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
 font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
 >
-</g>
-
-<g fill="#000080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,522,519)"
-font-family="Sans Serif" font-size="16" font-weight="400" font-style="normal" 
->
-<rect x="398" y="548" width="4" height="4"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,522,519)"
