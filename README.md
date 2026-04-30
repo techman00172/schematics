@@ -1,2 +1,2 @@
 # schematics
-techmans schematics
+Techmans Schematics
