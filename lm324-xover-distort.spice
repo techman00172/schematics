@@ -1,0 +1,32 @@
+** sch_path: /home/tp/xschem/lm324-xover-distort.sch
+**.subckt lm324-xover-distort
+x1 sigin sigout VCC VSS sigout lm324
+r1 sigout VSS 1k m=1
+c1 sigout VSS 1n m=1
+* noconn sigin
+* noconn VCC
+r2 VCC sigout 1k m=1
+V1 VCC 0 10
+V2 0 VSS 10
+**** begin user architecture code
+
+
+
+.option RUNLVL=5 post
+** .param VCC=10
+** .param VSS=-10
+.temp  25
+** vvcc vcc 0 dc VCC
+** vvss vss 0 dc VSS
+vp sigin 0 pwl 0 0 100n 2 200u 2 201u 3 400u 3 401u -5
+
+** models are generally not free: you must download
+** SPICE models for active devices and put them  into the below
+** referenced file in netlist/simulation directory.
+.include lm324.mod
+.tran 0.1u 500u
+
+
+**** end user architecture code
+**.ends
+.end
