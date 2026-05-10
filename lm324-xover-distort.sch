@@ -24,7 +24,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 240 -1280 1220 -890 {flags=graph
+B 2 70 -1280 1620 -890 {flags=graph
 y1=-5.1
 y2=3.1
 ypos1=0
@@ -32,8 +32,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.00036972309
-x2=0.00045025373
+x1=0.0003900129
+x2=0.00042001286
 divx=5
 subdivx=1
 xlabmag=1.0
