@@ -1,4 +1,4 @@
-v {xschem version=3.4.7 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 *
 * This file is part of XSCHEM,
 * a schematic capture and Spice/Vhdl/Verilog netlisting tool for circuit
@@ -24,6 +24,29 @@ K {}
 V {}
 S {}
 E {}
+B 2 240 -1280 1220 -890 {flags=graph
+y1=-5.1
+y2=3.1
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.00036972309
+x2=0.00045025373
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="sigin
+sigout
+"
+color="7 8"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 T {LM324 CROSSOVER DISTORTION} 450 -510 0 0 0.4 0.4 {}
 N 520 -340 560 -340 {lab=sigin}
 N 640 -400 640 -370 {lab=VCC}
@@ -36,11 +59,10 @@ N 560 -150 770 -150 {lab=sigout}
 N 560 -260 560 -150 {lab=sigout}
 N 900 -320 900 -300 {lab=sigout}
 N 340 -300 340 -270 {lab=0}
-C {lm324.sym} 640 -300 0 0 {name=x1}
 C {lab_pin.sym} 640 -200 0 0 {name=p10 lab=VSS}
 C {lab_pin.sym} 640 -400 0 0 {name=p1 lab=VCC}
 C {lab_pin.sym} 960 -300 2 0 {name=p2 lab=sigout}
-C {lab_pin.sym} 520 -340 0 0 {name=p3 lab=sigin}
+C {lab_pin.sym} 530 -340 0 0 {name=p3 lab=sigin}
 C {res.sym} 900 -250 0 0 {name=r1 m=1 value=1k}
 C {capa.sym} 820 -250 0 0 {name=c1 m=1 value=1n}
 C {lab_pin.sym} 820 -220 0 0 {name=p5 lab=VSS}
@@ -59,9 +81,9 @@ C {code_shown.sym} 490 -850 0 0 {name=s2 only_toplevel=false value="
 
 .option RUNLVL=5 post
 .temp  25
-vp sigin 0 pwl 0 0 100n 2 200u 2 201u 3 400u 3 401u -5
-** referenced file in netlist/simulation directory.
 .include lm324.mod
+vp sigin 0 pwl 0 0 100n 2 200u 2 201u 3 400u 3 401u -5
+
 
 .control
 tran 0.1u 500u
@@ -75,3 +97,4 @@ write lm324-xover-distort.raw
 
 
 }
+C {lm324.sym} 640 -300 0 0 {name=x1}
