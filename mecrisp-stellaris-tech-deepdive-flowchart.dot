@@ -1,0 +1,295 @@
+digraph MecrispStellaris {
+  rankdir=TB;
+  fontname="Helvetica";
+  node [fontname="Helvetica" fontsize=10 shape=box style=filled];
+  edge [fontname="Helvetica" fontsize=8];
+
+  // Color scheme
+  subgraph cluster_legend {
+    label="Legend";
+    style=dashed;
+    bgcolor="#f8f8f8";
+    node_hw [label="Hardware/CPU" fillcolor="#ffcccc" shape=box];
+    node_init [label="Boot/Init" fillcolor="#ccffcc" shape=box];
+    node_repl [label="REPL/Main Loop" fillcolor="#ccccff" shape=box];
+    node_comp [label="Compilation" fillcolor="#ffffcc" shape=box];
+    node_dict [label="Dictionary Ops" fillcolor="#ffccff" shape=box];
+    node_io [label="I/O & Terminal" fillcolor="#ccffff" shape=box];
+    {rank=same; node_hw node_init node_repl node_comp node_dict node_io}
+  }
+
+  // ============================================
+  // HARDWARE RESET SEQUENCE
+  // ============================================
+  subgraph cluster_reset {
+    label="HARDWARE RESET & VECTOR TABLE";
+    bgcolor="#fff0f0";
+    color="#cc4444";
+
+    cpu_reset [label="CPU RESET\nLoad SP from vector[0]\nLoad PC from vector[1]" fillcolor="#ffcccc"];
+    vectors [label="vectors.s\nInterrupt Vector Table\n(SP value, Reset handler,\nNMI, HardFault, SysTick,\nperipheral IRQs...)" fillcolor="#ffcccc"];
+
+    cpu_reset -> vectors [label="  hardware"];
+  }
+
+  // ============================================
+  // PER-CHIP MAIN ASSEMBLY FILE
+  // ============================================
+  subgraph cluster_mains {
+    label="mecrisp-stellaris-<chip>.s (per-target main file)";
+    bgcolor="#e8ffe8";
+    color="#44aa44";
+
+    switches [label="Capability Switches\n━━━━━━━━━━━━━━\n▪ m0core\n▪ registerallocator\n▪ charkommaavailable\n▪ flash8bytesblockwrite\n▪ emulated16bitflashwrites\n▪ erasedflashcontainszero\n▪ color" fillcolor="#ccffcc"];
+    inc_macros [label=".include datastackandmacros.s\nRegister aliases (tos=r6, psp=r7)\nData stack macros\nFlag definitions\nDictionary macros (Wortbirne)" fillcolor="#ccffcc"];
+    memmap [label="Memory Map\n━━━━━━━━━━\nRamAnfang / RamEnde\nFlashDictionaryAnfang / End\nKernschutzadresse (16KB)\nBacklinkgrenze" fillcolor="#ccffcc"];
+    inc_core [label=".include forth-core.s\nAll core words + stacks\n+ buffers + initial dict\n(See dictionary build subgraph)" fillcolor="#ccffcc"];
+    reset_label [label="Reset:\n  bl uart_init\n  .include catchflashpointers.s\n  welcome \"...\"\n  .include boot.s" fillcolor="#ccffcc"];
+
+    vectors -> switches;
+    switches -> inc_macros;
+    inc_macros -> memmap;
+    memmap -> inc_core;
+    inc_core -> reset_label;
+  }
+
+  // ============================================
+  // DICTIONARY BUILD (forth-core.s internals)
+  // ============================================
+  subgraph cluster_core {
+    label="forth-core.s — Dictionary & Core Build";
+    bgcolor="#fff0ff";
+    color="#aa44aa";
+
+    ramvars [label="Core Variables in RAM\n━━━━━━━━━━━━━━━\nkonstantenfaltungszeiger\nleavepointer, Datenstacksicherung\nEinsprungpunkt\nZweitDictionaryPointer\nZweitFadenende, FlashFlags\nVariablenPointer\n\nRA-extras: state_tos..5os\nconstant_tos..5os\nsprungtrampolin, inline_cache" fillcolor="#ffccff"];
+    stacks [label="Stacks & Buffers\n━━━━━━━━━━━━━━\nZahlenpuffer (67 bytes)\nEingabepuffer/TIB (200 bytes)\ndatenstack (256 words)\nreturnstack (256 words)\nSammeltabelle (flash buffer)" fillcolor="#ffccff"];
+    dict_init [label="CoreDictionaryAnfang:\nDictionary_Welcome entry\n--- Mecrisp-Stellaris 2.6.5 ---" fillcolor="#ffccff"];
+    include_words [label="Include ALL word definitions\n━━━━━━━━━━━━━━━━━━━\n(see WORD INCLUDE ORDER subgraph)" fillcolor="#ffccff"];
+    dict_close [label="Wortbirne_Kernende\n'--- Flash Dictionary ---'\nLink → FlashDictionaryAnfang\n(user-writable area)" fillcolor="#ffccff"];
+
+    ramvars -> stacks -> dict_init -> include_words -> dict_close;
+  }
+
+  // ============================================
+  // WORD INCLUDE ORDER
+  // ============================================
+  subgraph cluster_wordorder {
+    label="Word Definition Include Order (Classic vs RA)";
+    bgcolor="#fffff0";
+    color="#aaaa44";
+
+    classic_path [label="CLASSIC PATH:\ndouble.s → stackjugglers.s\n→ logic.s → comparisions.s\n→ memory.s → flash.s\n→ flash4/8/16bytesblockwrite.s\n→ calculations.s → terminal.s\n→ query.s → strings.s\n→ deepinsight.s → compiler.s\n→ compiler-flash.s\n→ controlstructures.s\n→ doloop.s → case.s\n→ token.s → numberstrings.s\n→ interpreter.s\n→ interrupts-common.s\n→ interrupts.s" fillcolor="#ffffcc" shape=note];
+
+    ra_path [label="RA (REGISTER ALLOCATOR) PATH:\nra/ra-infrastructure.s\nra/ra-tools.s\nra/double.s → ra/stackjugglers.s\n→ ra/logic.s → ra/ra-logic.s\n→ ra/comparisions.s\n→ ra/memory.s → flash.s\n→ ra/calculations.s → terminal.s\n→ query.s → strings.s\n→ deepinsight.s → compiler.s\n→ compiler-flash.s\n→ ra/controlstructures.s\n→ ra/doloop.s → ra/case.s\n→ token.s → numberstrings.s\n→ ra/ra-kompilator.s\n→ ra/ra-inline.s\n→ ra/interpreter.s" fillcolor="#ffffcc" shape=note];
+
+    include_words -> classic_path [style=dotted];
+    include_words -> ra_path [style=dotted];
+  }
+
+  // ============================================
+  // BOOT SEQUENCE
+  // ============================================
+  subgraph cluster_boot {
+    label="BOOT SEQUENCE (catchflashpointers.s + boot.s)";
+    bgcolor="#e8ffe8";
+
+    catchfp [label="catchflashpointers.s\n━━━━━━━━━━━━━━━\n1. Set Return Stack (SP)\n2. Set Data Stack (PSP)\n3. Set TOS = 42 (canary)\n4. Walk dictionary from\n   CoreDictionaryAnfang\n5. For each visible word:\n   - Allocate RAM for variables\n   - Initialize from flash\n   - Track VariablenPointer\n6. Find Flash DictionaryPointer\n   (scan backwards for non-0xFFFF)\n7. Set ZweitFadenende,\n   ZweitDictionaryPointer" fillcolor="#ccffcc"];
+
+    boot_search [label="boot.s\n━━━━━━━━━━\n1. Clear konstantenfaltungszeiger\n2. If RA: init_register_allocator\n3. Search dictionary for 'init'\n4. If found: bl execute init\n   then b quit_intern\n5. If not found: b quit" fillcolor="#ccffcc"];
+
+    reset_label -> catchfp -> boot_search;
+  }
+
+  // ============================================
+  // MAIN REPL LOOP
+  // ============================================
+  subgraph cluster_repl {
+    label="REPL — MAIN INTERPRETER LOOP";
+    bgcolor="#f0f0ff";
+
+    quit [label="quit\n━━━━━━━━━━━━━━━━\nReset return stack\nReset data stack\nbase ← 10 (decimal)\nstate ← 0 (execute)\nClear >IN\nSet TIB as current source" fillcolor="#ccccff"];
+    quit_inner [label="quit_innenschleife\n┌──────────────────────────┐\n│ 1. bl query              │\n│    (read line into TIB)  │\n│ 2. bl interpret          │\n│    (process each token)  │\n│ 3. emit ' ok.'           │\n│ 4. b quit_innenschleife  │\n└──────────────────────────┘" fillcolor="#ccccff"];
+
+    boot_search -> quit;
+    boot_search -> quit_inner [label="  via quit_intern"];
+    quit -> quit_inner;
+    quit_inner -> quit_inner [label="  loop forever"];
+  }
+
+  // ============================================
+  // QUERY - INPUT HANDLING
+  // ============================================
+  subgraph cluster_query {
+    label="query — Read User Input";
+    bgcolor="#f0ffff";
+
+    query_func [label="query\n━━━━━━━━━━━━━━\n>IN ← 0\ntib → Eingabepuffer\naccept (max 200 chars)\n  ├─ key (UART Rx, blocking)\n  ├─ Handle BS (0x08)\n  ├─ Handle DEL (0x7F)\n  ├─ Handle TAB → space\n  ├─ Handle Unicode (UTF-8)\n  ├─ Echo character back\n  ├─ Terminate on CR or LF\n  └─ Return length\nsetsource" fillcolor="#ccffff"];
+    query_tib [label="TIB\n(Input Buffer)\n200 bytes at\nEingabepuffer" fillcolor="#ccffff" shape=folder];
+
+    quit_inner -> query_func;
+    query_func -> query_tib [dir=both];
+  }
+
+  // ============================================
+  // INTERPRET — TOKEN PROCESSING
+  // ============================================
+  subgraph cluster_interpret {
+    label="interpret — Process Each Token";
+    bgcolor="#fffff0";
+
+    interpret_entry [label="interpret entry\n━━━━━━━━━━━━━━━━\nSave r4,r5,lr\nCheck data stack bounds\nSet constant folding pointer\n(if not already set)" fillcolor="#ffffcc"];
+
+    token_call [label="bl token\nReturns (addr len)\nEmpty string? → return" fillcolor="#ffffcc"];
+
+    find_call [label="bl find\nSearch dictionary\nReturns (addr flags)\nAddress=0 → not found" fillcolor="#ffffcc"];
+
+    found_decision [label="Token FOUND\nin dictionary?" shape=diamond fillcolor="#ffe0e0"];
+
+    number_convert [label="bl number\nTry numeric conversion\nReturns: (0) or (x 1)\nFailed? → ' not found.' error" fillcolor="#ffffcc"];
+
+    state_check [label="Check STATE" shape=diamond fillcolor="#ffe0e0"];
+
+    execute_path [label="EXECUTE MODE\n━━━━━━━━━━━━━━\nClear constant folding ptr\nCheck for compile-only flag\n  (error if set)\nddrop token string\nbl execute → run word\nContinue loop" fillcolor="#ffffcc"];
+
+    compile_path [label="COMPILE MODE\n━━━━━━━━━━━━━━\nCheck flags:\n Flag_ramallot?\n   → fold by executing\n Flag_foldable?\n   → check if enough\n     constants available\n Flag_opcodable?\n   → try opcode fusion\n     (see OPCODING subgraph)\n Flag_immediate?\n   → execute inline\n Flag_inline?\n   → inline, code\n Otherwise:\n   → call, (BL instruction)" fillcolor="#ffffcc"];
+
+    const_write [label="konstantenschreiben\nWrite all pending\nfolding constants\nas literals into dict" fillcolor="#ffffcc"];
+
+    interpret_entry -> token_call -> find_call -> found_decision;
+    found_decision -> number_convert [label="  Not found"];
+    found_decision -> state_check [label="  Found"];
+    number_convert -> interpret_entry [label="  OK, loop"];
+    state_check -> execute_path [label="  state=0"];
+    state_check -> compile_path [label="  state≠0"];
+    execute_path -> interpret_entry [label="  loop"];
+    compile_path -> const_write [label="  no optim\n  possible"];
+    const_write -> interpret_entry [label="  loop"];
+  }
+
+  // ============================================
+  // FIND — DICTIONARY SEARCH
+  // ============================================
+  subgraph cluster_find {
+    label="find — Dictionary Search";
+    bgcolor="#fff0f0";
+
+    find_entry [label="find entry\nPush (0,0) on return stack\n→ hold 'no hit yet'\nFetch string addr+len\nbl dictionarystart" fillcolor="#ffccff"];
+
+    dict_crawl [label="Dictionary Crawl Loop\n━━━━━━━━━━━━━━━━━━\nCheck visibility flag\n  → invisible? skip\nCompare name length\n  → different? skip\nCase-insensitive compare\n  → match? FOUND!\nRAM dictionary?\n  → first match wins\nFlash dictionary?\n  → search ALL (newest wins)\n  overwrite return stack hit" fillcolor="#ffccff"];
+
+    find_result [label="Return (addr flags)\nor (0 0) if not found" fillcolor="#ffccff"];
+
+    find_entry -> dict_crawl -> find_result;
+    dict_crawl -> dict_crawl [label="  next\n  word"];
+  }
+
+  // ============================================
+  // OPCODING — PEEPHOLE OPTIMIZATION
+  // ============================================
+  subgraph cluster_opcoding {
+    label="OPCODING — Peephole Optimization (Classic Compiler)";
+    bgcolor="#ffffff";
+
+    opcode_decision [label="Opcode Category\n(low 3 bits of flags)" shape=diamond fillcolor="#ffe0e0"];
+
+    op_plusminus [label="Category 1: +/- \n━━━━━━━━━━━━━━━\n1 constant →\n  fits in 8 bits?\n    → adds/subs r6,#imm8\n  fits in 12 bits? (M3/M4)\n    → adds/subs r6,#imm12\n  else → load via register\n    adds/subs r6,rn" fillcolor="#ffffcc" shape=note];
+
+    op_calc [label="Category 2: AND/OR/XOR/BIC/*\n━━━━━━━━━━━━━━━━━━\n1 constant →\n  M3/M4: test 12-bit mask\n  else → load via register\n  ands/ors/eors/bics r6,rn" fillcolor="#ffffcc" shape=note];
+
+    op_eq [label="Category 3: = / <>\n━━━━━━━━━━━━━━━━━\n1 constant →\n  fits in 8 bits?\n    → subs r6,#imm then test\n  fits in 12 bits? (M3/M4)\n    → subs r6,#imm12 then test\n  else → load via register\nInline rest of definition" fillcolor="#ffffcc" shape=note];
+
+    op_shift [label="Category 4: lshift/rshift/arshift\n━━━━━━━━━━━━━━━━━━━━━━━━\n1 constant →\n  shift=0 → no op\n  shift>31 → zero/max\n  shift 1-31 →\n    lsrs/asrs/lsls r6,#shift\n    (fused into single opcode)" fillcolor="#ffffcc" shape=note];
+
+    op_store [label="Category 5: Store operations\n━━━━━━━━━━━━━━━━━━━━━\n1 constant → load addr\n  in register, inline store\n2 constants → load both\n  in registers, inline store\n+ drop opcode" fillcolor="#ffffcc" shape=note];
+
+    op_special [label="Category 0/6: Special\n━━━━━━━━━━━━━━━━━\nCall definition's\nown handler at end\n(bit@, hbit@, cbit@)" fillcolor="#ffffcc" shape=note];
+
+    opcode_decision -> op_plusminus [label="  1"];
+    opcode_decision -> op_calc [label="  2/6"];
+    opcode_decision -> op_eq [label="  3"];
+    opcode_decision -> op_shift [label="  4"];
+    opcode_decision -> op_store [label="  5"];
+    opcode_decision -> op_special [label="  0"];
+  }
+
+  // ============================================
+  // COMPILATION — CREATE & BUILD DEFINITIONS
+  // ============================================
+  subgraph cluster_create {
+    label="create — Build New Dictionary Entry";
+    bgcolor="#ffe0ff";
+
+    create_entry [label="create\n━━━━━━━━━━━━━━━━\nFetch name token\nCheck not empty\nCheck for redefinition\n  → warn 'Redefine ...'\nalign4komma" fillcolor="#ffccff"];
+
+    create_decision [label="Compiling\nRAM or Flash?" shape=diamond fillcolor="#ffe0e0"];
+
+    create_flash [label="CREATE for FLASH\n━━━━━━━━━━━━━━━\nReserve space\n(8/16-byte aligned\nif ECC flash)\nLeave 6 bytes gap\nfor Link+Flags\nWrite name string\nBack-link into\nprevious word's\nLink field (if 0xFFFFFFFF)\nUpdate Fadenende\nFlashFlags ← Flag_visible" fillcolor="#ccffcc"];
+
+    create_ram [label="CREATE for RAM\n━━━━━━━━━━━━━━\nWrite Link (prev latest)\nWrite Flags = Invisible\nWrite name string\nUpdate Fadenende" fillcolor="#ccccff"];
+
+    create_end [label="Save Einsprungpunkt\n(for recurse/dodoes)\nReturn" fillcolor="#ffccff"];
+
+    create_entry -> create_decision;
+    create_decision -> create_flash [label="  Flash"];
+    create_decision -> create_ram [label="  RAM"];
+    create_flash -> create_end;
+    create_ram -> create_end;
+  }
+
+  // ============================================
+  // FLASH WRITE
+  // ============================================
+  subgraph cluster_flash {
+    label="Flash Write (h_flashkomma)";
+    bgcolor="#fff0e0";
+
+    hkomma_entry [label="h, / hkomma\n16-bit write to dict\nCheck Flash vs RAM\n  RAM: direct strh\n  Flash: bl h_flashkomma" fillcolor="#ccffcc"];
+
+    flash_write [label="h_flashkomma (chip-specific)\n━━━━━━━━━━━━━━━━━━━\nCheck address bounds\n  (Kernschutzadresse to\n   FlashDictionaryEnde)\nCheck data ≠ 0xFFFF\nCheck location = 0xFFFF\n  (only write once)\nUnlock Flash controller\nSet programming size\n  (byte/halfword)\nWrite data\nPoll BUSY flag\nLock Flash controller" fillcolor="#ccffcc"];
+
+    hkomma_entry -> flash_write;
+  }
+
+  // ============================================
+  // TERMINAL / UART I/O
+  // ============================================
+  subgraph cluster_term {
+    label="Terminal I/O (via Hooks)";
+    bgcolor="#f0ffff";
+
+    term_hooks [label="Terminal Hook System\n━━━━━━━━━━━━━━━━━\nhook-emit → serial-emit\nhook-key  → serial-key\nhook-emit? → serial-emit?\nhook-key?  → serial-key?\nhook-pause → nop_vektor\n\nAll redirectable at runtime!" fillcolor="#ccffff" shape=component];
+
+    serial_emit [label="serial-emit\nPoll TXE flag\nWrite char to DR" fillcolor="#ccffff"];
+    serial_key [label="serial-key\nPoll RXNE flag\nRead char from DR" fillcolor="#ccffff"];
+    uart_init [label="uart_init (chip-specific)\n━━━━━━━━━━━━━━━━━━\nEnable GPIO clocks\nConfigure pins (AF mode)\nSet baudrate via BRR\nEnable USART (UE+TE+RE)" fillcolor="#ccffff"];
+
+    term_hooks -> serial_emit;
+    term_hooks -> serial_key;
+  }
+
+  // ============================================
+  // CONTROL STRUCTURES
+  // ============================================
+  subgraph cluster_ctrl {
+    label="Control Structures (Compile-Time)";
+    bgcolor="#f0ffe0";
+
+    ctrl_words [label="if...else...then\nbegin...again/until/while...repeat\ndo...loop/+loop\n?do...loop\ncase...of...endof...endcase\nahead\nexit\nrecurse" fillcolor="#ffffcc" shape=note];
+
+    jump_mech [label="jump,/cjump, mechanism\n━━━━━━━━━━━━━━━━━━\nReserve 2-byte hole\nthen fill with B.cond or B\nopcode once target is known\nChecks ±127 range (cond)\nor ±1023 range (uncond)\n→ 'Jump too far' if exceeded" fillcolor="#ffffcc" shape=note];
+
+    ctrl_words -> jump_mech [style=dotted];
+  }
+
+  // ============================================
+  // EDGES: HIGH-LEVEL FLOW
+  // ============================================
+  vectors -> switches [ltail=cluster_reset lhead=cluster_mains];
+
+  // Cross-references
+  compile_path -> opcode_decision [style=dashed color="#888888" ltail=cluster_interpret lhead=cluster_opcoding label="  opcodable?"];
+  find_call -> find_entry [style=dashed color="#888888" ltail=cluster_interpret lhead=cluster_find label="  call"];
+  create_entry -> hkomma_entry [style=dashed color="#888888" label="  writes names"];
+  query_func -> serial_key [style=dashed color="#888888" ltail=cluster_query lhead=cluster_term];
+  reset_label -> uart_init [style=dashed color="#888888"];
+}
