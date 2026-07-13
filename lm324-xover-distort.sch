@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.8RC file_version=1.3
 *
 * This file is part of XSCHEM,
 * a schematic capture and Spice/Vhdl/Verilog netlisting tool for circuit
@@ -23,8 +23,9 @@ G {}
 K {}
 V {}
 S {}
+F {}
 E {}
-B 2 70 -1280 1620 -890 {flags=graph
+B 2 620 -750 1500 -360 {flags=graph
 y1=-5.1
 y2=3.1
 ypos1=0
@@ -32,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.0003900129
-x2=0.00042001286
+x1=0.00032195059
+x2=0.00047294554
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -46,38 +47,41 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-}
-T {LM324 CROSSOVER DISTORTION} 450 -510 0 0 0.4 0.4 {}
-N 520 -340 560 -340 {lab=sigin}
-N 640 -400 640 -370 {lab=VCC}
-N 640 -230 640 -200 {lab=VSS}
-N 770 -300 960 -300 {lab=sigout}
-N 900 -300 900 -280 {lab=sigout}
-N 820 -300 820 -280 {lab=sigout}
-N 770 -300 770 -150 {lab=sigout}
-N 560 -150 770 -150 {lab=sigout}
-N 560 -260 560 -150 {lab=sigout}
-N 900 -320 900 -300 {lab=sigout}
-N 340 -300 340 -270 {lab=0}
-C {lab_pin.sym} 640 -200 0 0 {name=p10 lab=VSS}
-C {lab_pin.sym} 640 -400 0 0 {name=p1 lab=VCC}
-C {lab_pin.sym} 960 -300 2 0 {name=p2 lab=sigout}
-C {lab_pin.sym} 530 -340 0 0 {name=p3 lab=sigin}
-C {res.sym} 900 -250 0 0 {name=r1 m=1 value=1k}
-C {capa.sym} 820 -250 0 0 {name=c1 m=1 value=1n}
-C {lab_pin.sym} 820 -220 0 0 {name=p5 lab=VSS}
-C {lab_pin.sym} 900 -220 0 0 {name=p6 lab=VSS}
-C {noconn.sym} 520 -340 1 0 {name=l2}
-C {noconn.sym} 640 -370 2 0 {name=l3}
-C {res.sym} 900 -350 0 0 {name=r2 m=1 value=1k}
-C {vsource.sym} 340 -330 0 0 {name=V1 value=10 savecurrent=false}
-C {vsource.sym} 340 -240 0 0 {name=V2 value=10 savecurrent=false}
-C {lab_pin.sym} 340 -210 0 0 {name=p8 lab=VSS}
-C {lab_pin.sym} 340 -360 0 0 {name=p11 lab=VCC}
-C {lab_pin.sym} 340 -280 0 0 {name=p7 lab=0}
+hilight_wave=-1}
+B 2 820 -725 964 -641 {flags=image,unscaled
+alpha=0.8
+image_data=iVBORw0KGgoAAAANSUhEUgAAAJAAAABUCAIAAADiXSlNAAAABmJLR0QA/wD/AP+gvaeTAAAAVElEQVR4nO3aMQEAMAzDsDIsfzajkazSbwaeAQAAAPjS7sobcwAAAAAAAAAAclSPKJdzAAAAAAAAAAByVI8ol3MAAAAAAAAAAHJUjyiXcwAAAIBKD887Ge0n8rxEAAAAAElFTkSuQmCC}
+T {LM324 CROSSOVER DISTORTION} 25 -465 0 0 0.4 0.4 {}
+N 190 -305 230 -305 {lab=sigin}
+N 310 -365 310 -335 {lab=VCC}
+N 310 -195 310 -165 {lab=VSS}
+N 540 -265 540 -245 {lab=sigout}
+N 490 -265 490 -245 {lab=sigout}
+N 440 -265 440 -115 {lab=sigout}
+N 230 -115 440 -115 {lab=sigout}
+N 230 -225 230 -115 {lab=sigout}
+N 540 -285 540 -265 {lab=sigout}
+N 80 -305 80 -275 {lab=0}
+N 440 -265 560 -265 {lab=sigout}
+C {lab_pin.sym} 310 -165 0 0 {name=p10 lab=VSS}
+C {lab_pin.sym} 310 -365 0 0 {name=p1 lab=VCC}
+C {lab_pin.sym} 560 -265 2 0 {name=p2 lab=sigout}
+C {lab_pin.sym} 200 -305 0 0 {name=p3 lab=sigin}
+C {res.sym} 540 -215 0 0 {name=r1 m=1 value=1k}
+C {capa.sym} 490 -215 0 0 {name=c1 m=1 value=1n}
+C {lab_pin.sym} 490 -185 0 0 {name=p5 lab=VSS}
+C {lab_pin.sym} 540 -185 0 0 {name=p6 lab=VSS}
+C {noconn.sym} 190 -305 1 0 {name=l2}
+C {noconn.sym} 310 -335 2 0 {name=l3}
+C {res.sym} 540 -315 0 0 {name=r2 m=1 value=1k}
+C {vsource.sym} 80 -335 0 0 {name=V1 value=10 savecurrent=false}
+C {vsource.sym} 80 -245 0 0 {name=V2 value=10 savecurrent=false}
+C {lab_pin.sym} 80 -215 0 0 {name=p8 lab=VSS}
+C {lab_pin.sym} 80 -365 0 0 {name=p11 lab=VCC}
+C {lab_pin.sym} 80 -285 0 0 {name=p7 lab=0}
 C {title.sym} 190 -60 0 0 {name=l1 author="T.Porter"}
-C {lab_pin.sym} 900 -380 2 0 {name=p4 lab=VCC}
-C {code_shown.sym} 490 -850 0 0 {name=s2 only_toplevel=false value="
+C {lab_pin.sym} 540 -345 2 0 {name=p4 lab=VCC}
+C {code_shown.sym} 20 -825 0 0 {name=s2 only_toplevel=false value="
 
 .option RUNLVL=5 post
 .temp  25
@@ -97,4 +101,4 @@ write lm324-xover-distort.raw
 
 
 }
-C {lm324.sym} 640 -300 0 0 {name=x1}
+C {lm324.sym} 310 -265 0 0 {name=x1}
