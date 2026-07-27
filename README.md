@@ -1,2 +1,0 @@
-# schematics
-Techmans Schematics

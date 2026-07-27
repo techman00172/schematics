@@ -1,3 +1,0 @@
-Error: incomplete or empty netlist
-       or no ".plot", ".print", or ".fourier" lines in batch mode;
-no simulations run!
